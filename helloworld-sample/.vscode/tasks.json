@@ -3,10 +3,25 @@
 {
 	"version": "2.0.0",
 	"tasks": [
+		// {
+		// 	"type": "bun",
+		// 	"script": "watch",
+		// 	"problemMatcher": "$tsc-watch",
+		// 	"isBackground": true,
+		// 	"presentation": {
+		// 		"reveal": "never"
+		// 	},
+		// 	"group": {
+		// 		"kind": "build",
+		// 		"isDefault": true
+		// 	}
+		// },
 		{
-			"type": "npm",
-			"script": "watch",
+			"type": "bun",
+			"script": "bun run tsc -watch -p ./",
 			"problemMatcher": "$tsc-watch",
+			"label": "bun: watch",
+			"detail": "bun run tsc -watch -p ./ - package.json",
 			"isBackground": true,
 			"presentation": {
 				"reveal": "never"
